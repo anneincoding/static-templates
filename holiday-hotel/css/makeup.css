@@ -1,0 +1,11 @@
+/* main slide */
+#slider1 li{
+  height: 781.75px;
+  overflow: hidden;
+}
+
+.team-grid .grid figure{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
