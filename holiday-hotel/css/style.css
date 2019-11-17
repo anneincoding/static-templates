@@ -90,6 +90,11 @@ a:focus, a:hover {
 	margin: 30px auto 10px;
 	line-height: 2.4em;
 }
+.itinerary-description a{
+	letter-spacing: .7px;
+	font-size: 16px;
+}
+
 .middle-img {
 	display: flex;
   align-items: center;
