@@ -478,7 +478,7 @@ ul.callbacks_tabs li {
 
 .bott-img:hover {
 	border-color: #000;
-	background-color: #00E8FF;
+	background-color: #4fc1de;
 }
 
 .bottom-gds:hover h4.mission {
@@ -556,7 +556,7 @@ ul.callbacks_tabs li {
 
 .description a:hover {
 	background-color: #000;
-	color: #376bb3;
+	color: #4fc1de;
 }
 
 .principles-grids2 {
@@ -645,7 +645,7 @@ ul.callbacks_tabs li {
 }
 
 .newsletter input[type="text"] {
-	width: 74%;
+	width: 70%;
 	padding: 15px;
 	/*--w3layouts--*/
 	/*--agileits--*/
@@ -672,6 +672,18 @@ ul.callbacks_tabs li {
 
 .social {
 	margin-top: 10px;
+}
+
+.wechat-contact{
+	margin-bottom: 20px;
+}
+.wechat-contact p{
+	margin-bottom: 20px;
+}
+.wechat-contact img{
+	margin-left: 20px;
+	width: 100px;
+	height: 100px;
 }
 
 ul.social-icons {
