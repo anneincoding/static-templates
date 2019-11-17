@@ -94,6 +94,9 @@ a:focus, a:hover {
 	display: flex;
   align-items: center;
 }
+.row-reverse{
+	flex-direction: row-reverse;
+}
 .cuisines .container .middle-img img{
 	margin-bottom: 10px;
 }
