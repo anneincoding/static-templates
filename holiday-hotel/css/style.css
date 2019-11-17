@@ -74,6 +74,27 @@ a:focus, a:hover {
 }
 
 
+/* add by Anne */
+.date-group {
+	text-align: center;
+}
+.date-group .date-group-item{
+	font-size: 20px;
+	line-height: 2.5em;
+	letter-spacing: 1px;
+	list-style: none;
+}
+.itinerary-description p{
+	text-align: left;
+	width: 80%;
+	margin: 30px auto 10px;
+	line-height: 2.4em;
+}
+.middle-img {
+	display: flex;
+  align-items: center;
+}
+
 /*-- Index-Page-Styling --*/
 
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
@@ -1258,18 +1279,30 @@ figure.effect-zoe:hover ul.social-icons a:first-child {
 	padding: 100px 0;
 }
 
+.cuisines .container{
+	margin-bottom: 30px;
+	display: flex;
+}
+
 /*--w3layouts--*/
 /*--agileits--*/
 .cuisines h2 {
 	text-align: left;
 	font-size: 40px;
 	font-weight: 700;
-	margin-bottom: 50px;
+	margin-bottom: 12px;
 	color: #376bb3;
+}
+.cuisines h5 {
+	font-size: 1.2em;
+	font-weight: 500px;
+	margin-bottom: 30px;
+	color: #777;
+	text-align: left;
 }
 
 .cuisines p {
-	line-height: 35px;
+	line-height: 28px;
 	color: #777;
 }
 
@@ -1346,7 +1379,8 @@ h3.title {
 
 .menu-text-left {
 	float: left;
-	width: 40%;
+	margin-right: 20px;
+	/* width: 40%; */
 	text-align: left;
 	margin-left: 2em;
 }
@@ -1369,7 +1403,7 @@ h3.title {
 
 .menu-text-midle {
 	float: left;
-	width: 20%;
+	width: 10%;
 	position: relative;
 	height: 19px;
 }
@@ -1386,8 +1420,8 @@ h3.title {
 }
 
 .menu-text-right {
-	float: right;
-	width: 30%;
+	float: left;
+	/* width: 30%; */
 }
 
 .menu-text-right h4 {

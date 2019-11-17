@@ -55,17 +55,16 @@
 				</div>
 
 				<div id="navbar" class="navbar-collapse agileits w3layouts navbar-right collapse">
-					<ul class="nav agileits w3layouts navbar-nav">
-						<li class="active"><a href="index.html">HOME</a></li>
-						<!-- <li><a href="sardine.html">THE SARDINE RUN</a></li> -->
-						<!-- <li><a href="index.html">TRAINING & EQUIPMENT</a></li> -->
-						<li><a href="itinerary.html">ITINERARY</a></li>
-						<li><a href="sharks.html">THE SHARKS</a></li>
-						<li><a href="gallery.html">GALLERY</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
-						<li><a href="booking.html">BOOKING</a></li>
-					</ul>
-				</div>
+						<ul class="nav agileits w3layouts navbar-nav">
+							<li><a href="index.html">HOME</a></li>
+							<!-- <li><a href="sardine.html">THE SARDINE RUN</a></li> -->
+							<!-- <li><a href="index.html">TRAINING & EQUIPMENT</a></li> -->
+							<li><a href="itinerary.html">ITINERARY</a></li>
+							<li><a href="sharks.html">THE SHARKS</a></li>
+							<li><a href="gallery.html">GALLERY</a></li>
+							<li  class="active"><a href="booking.html">CONTACT</a></li>
+						</ul>
+					</div>
 
 			</div>
 		</nav>
@@ -348,7 +347,7 @@
 				<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts social wow fadeInUp">
 					<div class="wechat-contact" >
 						<p> scan the QR code to add me on WeChat</p>
-						<img src="./images/wechat.jpeg" alt="wechat">
+						<img src="./images/wechat.jpg" alt="wechat">
 					</div>
 					<ul class="social-icons">
 						<li class="agileits w3layouts"><a href="https://www.facebook.com/bigsixsharkdivers/" target="_blank" class="facebook agileits w3layouts" title="Go to Our Facebook Page"></a></li>
@@ -361,9 +360,9 @@
 				<div class="col-md-6 col-sm-6 footer-grids agileits w3layouts newsletter wow fadeInUp">
 					<h4>Stay Connected</h4>
 					<p>Subscribe to our newsletter and get informed of our newest projects.</p>
-					<form action="#" method="post">
+					<form action="https://formspree.io/mbjjpagr" method="POST" id="subscribe">
 						<input type="text" placeholder="Email" name="Email" required="">
-						<input type="submit" value="SUBSCRIBE">
+						<input type="submit" value="SUBSCRIBE" id="submit">
 					</form>
 				</div>
 	
@@ -394,7 +393,29 @@
 			</div>
 		</div>
 		<!-- //Footer -->
-
+		<script>
+				$(function () {
+					$("#submit").on("click",function(){
+						var selfHref = location.href;
+						console.log(selfHref, 'self Href')
+						var obj = $("#subscribe").serialize();  //获取id为content的form表单里面的内容,name值均为formspree提供不能更改
+						$.ajax({
+							type:"post",						//必须post请求
+							url:"https://formspree.io/mbjjpagr", 
+							async:true,
+							data:obj,            									
+							dataType:"json",
+							success: res=>{
+								alert('邮件已发送!!!');   
+							},
+							error:res=>{
+								window.location.href=selfHref;
+								// alert("未知错误,发送失败");
+							}
+						});
+					})
+				});
+			</script>
 
 
 	<!-- Necessary-JavaScript-Files-&-Links -->
@@ -466,6 +487,7 @@
 		<!-- //Date-Picker-JavaScript -->
 
 	<!-- //Necessary-JavaScript-Files-&-Links -->
+
 
 
 
