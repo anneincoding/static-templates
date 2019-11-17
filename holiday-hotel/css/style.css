@@ -94,6 +94,9 @@ a:focus, a:hover {
 	display: flex;
   align-items: center;
 }
+.cuisines .container .middle-img img{
+	margin-bottom: 10px;
+}
 
 /*-- Index-Page-Styling --*/
 
@@ -3616,6 +3619,9 @@ p.contact-p {
 	.team-grid {
 		width: 33.3%;
 		float: left;
+	}
+	.cuisines .container{
+		display: block;
 	}
 	.cuisines-grids {
 		width: 50%;
