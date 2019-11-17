@@ -1334,7 +1334,7 @@ h3.title {
 
 .menu-text-left {
 	float: left;
-	width: 50%;
+	width: 40%;
 	text-align: left;
 	margin-left: 2em;
 }
@@ -1375,7 +1375,7 @@ h3.title {
 
 .menu-text-right {
 	float: right;
-	width: 18%;
+	width: 30%;
 }
 
 .menu-text-right h4 {
