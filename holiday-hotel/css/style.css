@@ -343,7 +343,7 @@ ul.callbacks_tabs li {
 
 .services {
 	background-color: #f7f7f7;
-	padding: 150px 0 100px;
+	padding: 0 0 100px;
 }
 
 .services h2 {
@@ -371,9 +371,9 @@ ul.callbacks_tabs li {
 	margin-top: 100px;
 }
 
-.service-info img {
+/* .service-info img {
 	width: 100px;
-}
+} */
 
 .service-info h4 {
 	font-size: 20px;
@@ -3423,9 +3423,9 @@ p.contact-p {
 	.service-info-grids {
 		margin-top: 50px;
 	}
-	.service-info img {
+	/* .service-info img {
 		width: 75px;
-	}
+	} */
 	.newsletter input[type="text"] {
 		width: 66%;
 	}
