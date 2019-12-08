@@ -813,6 +813,12 @@ ul.social-icons li a.youtube:hover {
 
 .banner {
 	position: relative;
+	width: 100vw;
+	height: calc(100vw * 0.3);
+}
+
+.banner img{
+	object-fit: fill;
 }
 
 .banner h1 {
@@ -1354,17 +1360,37 @@ figure.effect-zoe:hover ul.social-icons a:first-child {
 
 /*--w3layouts--*/
 /*--agileits--*/
+
+.combo-package 	.title {
+	font-size: 24px;
+	font-weight: 500;
+	color: #376bb3;
+}
+.combo-package 	.description {
+	text-align: left;
+}
+
+.combo-package .date-group-item{
+	margin-bottom: 20px;
+	line-height: 1.7em;
+}
+
+.menu .container {
+	margin-bottom: 30px;
+}
+
 .menu {
-	padding: 13em 0 5em;
+	/* padding: 13em 0 5em; */
 	position: relative;
+	padding-top: 30px;
 }
 
 .menu-tag {
-	position: absolute;
+	/* position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;
-	margin-top: 100px;
+	right: 0; */
+	margin: 70px 0 30px;
 }
 
 h3.title {
